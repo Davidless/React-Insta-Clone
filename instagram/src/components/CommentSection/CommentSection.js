@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const CommentSection = () => {
+const CommentSection = props => {
   return (
     <div>
-      CommentSection
+      {/* {props.comments.map(
+        (c, i) => (
+          <ul key={i} c={c} />
+        ),
+        console.log(props)
+      )} */}
     </div>
-  )
-}
+  );
+};
 
 export default CommentSection;
