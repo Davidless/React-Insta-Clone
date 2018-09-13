@@ -1,14 +1,14 @@
 import React from "react";
+import Comment from "./Comment";
 
 const CommentSection = props => {
   return (
     <div>
-      {/* {props.comments.map(
-        (c, i) => (
-          <ul key={i} c={c} />
-        ),
-        console.log(props)
-      )} */}
+      {props.dummyData.map((com, i) => (
+          <ul key={i} com={com}>
+          <Comment com={com} />
+        </ul>
+      ))}
     </div>
   );
 };

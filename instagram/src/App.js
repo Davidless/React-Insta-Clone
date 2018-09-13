@@ -3,6 +3,7 @@ import dummyData from "./dummy-data";
 
 import SearchBar from "./components/SearchBar/SearchBar.js";
 import PostContainer from "./components/PostContainer/PostContainer.js";
+import CommentSection from "./components/CommentSection/CommentSection";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="App">
         <SearchBar />
         <PostContainer dummyData={dummyData} />
+        <CommentSection dummyData={dummyData} />
       </div>
     );
   }
