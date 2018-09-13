@@ -4,8 +4,8 @@ import Comment from "./Comment";
 const CommentSection = props => {
   return (
     <div>
-      {props.dummyData.map((com, i) => (
-          <ul key={i} com={com}>
+      {props.data.comments.map((com, i) => (
+        <ul key={i} com={com}>
           <Comment com={com} />
         </ul>
       ))}
