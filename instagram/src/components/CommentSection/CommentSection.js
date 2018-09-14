@@ -1,16 +1,25 @@
 import React from "react";
 import Comment from "./Comment";
+import CommentInput from "./CommentInput";
 
-const CommentSection = props => {
-  return (
-    <div>
-      {props.data.comments.map((com, i) => (
-        <ul key={i} com={com}>
-          <Comment com={com} />
-        </ul>
-      ))}
-    </div>
-  );
-};
+class CommentSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      comments: props.comments
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.comments.map((com, i) => (
+          <Comment key={i} com={com} />
+        ))}
+        <CommentInput />
+      </div>
+    );
+  }
+}
 
 export default CommentSection;
