@@ -1,11 +1,11 @@
 import React from "react";
 
-const PostHeader = () => {
+const PostHeader = props => {
   return (
     <div>
       <span>
-        <img src={props.data.thumbnailUrl} alt={`${props.data.thumbnailUrl}`} />
-        <b>{props.data.username}</b>
+        <img src={props.thumbnailUrl} alt={`${props.thumbnailUrl}`} />
+        <b>{props.username}</b>
       </span>
     </div>
   );

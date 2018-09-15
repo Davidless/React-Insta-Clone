@@ -4,9 +4,9 @@ import Post from "./Post";
 const PostContainer = props => {
   return (
     <div>
-      {props.dummyData.map((posts, i) => (
-        <ul key={i} posts={posts}>
-          <Post posts={posts} />
+      {props.posts.map((post, i) => (
+        <ul key={i} post={post}>
+          <Post post={post} />
         </ul>
       ))}
     </div>

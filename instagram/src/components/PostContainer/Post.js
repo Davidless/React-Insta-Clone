@@ -6,18 +6,19 @@ const Post = props => {
   return (
     <div>
       <PostHeader
-        username={props.posts.username}
-        thumbnailUrl={props.posts.thumbnailUrl}
+        username={props.post.username}
+        thumbnailUrl={props.post.thumbnailUrl}
       />
       <div>
-        <img src={props.posts.imageUrl} alt={`${props.posts.imageUrl}`} />
+        <img src={props.post.imageUrl} alt={`${props.post.imageUrl}`} />
+        <br />
         <span>
-          <b>{props.posts.likes} likes</b>
+          <b>{props.post.likes} likes</b>
         </span>
         <br />
-        <span>{props.posts.timestamp}</span>
+        <span>{props.post.timestamp}</span>
       </div>
-      <CommentSection data={props.posts.comments} />
+      <CommentSection comments={props.post.comments} />
     </div>
   );
 };

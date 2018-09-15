@@ -10,6 +10,10 @@ class CommentSection extends React.Component {
     };
   }
 
+  addNewComment = e => {
+    
+  }
+
   render() {
     return (
       <div>
